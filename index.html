@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map and Panorama Viewer </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/vendors/ol.css">
+        <link rel="stylesheet" href="css/vendors/pannellum.css">
+        <link rel="stylesheet" href="css/custom/main.css">
+
+        <script src="js/vendors/jquery-1.9.1.js"></script>
+        <script src="js/vendors/ba-tiny-pubsub.js"></script>
+        <script src="js/vendors/ol.js"></script>
+        <script src="js/vendors/Renderer.js"></script>
+        <script src="js/vendors/pannellum.js"></script>
+        <script src="js/custom/app.js" type="text/javascript"></script>
+        <script src="js/custom/panorama.js" type="text/javascript"></script>
+        <script src="js/custom/mapView.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Map and Panorama/photosphere Viewer </h1>        
+        <p>Nowadays there is a boom in 360° panoramic images due to the ever-reducing cost of the technology, 
+            availability of software (<a href="http://wiki.panotools.org/Windows_software#Stitching_Software">stitching programs</a> or applications for smart phones) and the possibility to embed them onto a web page. Even with my basic mobile phone (cost 200 €) I was able to generate a simple panoramic image!
+        </p>
+        <p>This example shows how to connect a map to 360° panorama. Map and panorama are reciprocally related: the click on a icon on the map opens the correspondent panorama. And the navigation in the panorama update the rotation of the icon in the map.  </p>
+        <p>I use the lightweight but powerfull Javascript library Viewer <a href="https://pannellum.org/">Pannellum</a> to show the panorama  
+        </p>
+        <div id="map"></div>
+        <div id="panorama"></div>
+    </body>
+</html>
